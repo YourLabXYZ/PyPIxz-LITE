@@ -17,7 +17,7 @@ def install_packages(file_path="requirements.txt", logger=False):
     if not os.path.exists(os.path.abspath(file_path)):
         if not logger:
             raise FileNotFoundError(f"The {file_path} file was not found.")
-        return logging.error(f"The {file_path} file was not found.")
+        return logging.error("The %s file was not found.", file_path)
 
     file_path = os.path.abspath(file_path)
 
@@ -33,6 +33,4 @@ def install_packages(file_path="requirements.txt", logger=False):
     except subprocess.CalledProcessError as error:
         if not logger:
             raise EnvironmentError("An error occurred while installing dependencies.", error.stderr) from error
-        return logging.error("An error occurred while installing dependencies.", error.stderr)
-
-
+        return logging.error("An error occurred while installing dependencies: %s", error.stderr)
