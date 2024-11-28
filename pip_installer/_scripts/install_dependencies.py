@@ -30,9 +30,9 @@ def install_packages(file_path="requirements.txt", logger=False):
             return print(result.stdout)
         logging.info("Successfully installed dependencies.")
         return logging.info(result.stdout)
-    except subprocess.CalledProcessError as e:
+    except subprocess.CalledProcessError as error:
         if not logger:
-            raise EnvironmentError("An error occurred while installing dependencies.", e.stderr)
-        return logging.error("An error occurred while installing dependencies.", e.stderr)
+            raise EnvironmentError("An error occurred while installing dependencies.", error.stderr) from error
+        return logging.error("An error occurred while installing dependencies.", error.stderr)
 
 
