@@ -1,15 +1,15 @@
 # (c) 2024 YourLabXYZ.
 # Licensed under MIT License.
 
-""" PIP-Installer
+""" PyPIz
 
-PIP-Installer is a program to help developers and users to better manage
+PyPIz is a program to help developers and users to better manage
 the dependencies required for the proper functioning of their program.
 """
 
 from ._scripts.install_dependencies import install_packages
 
-__version__ = 'release-1.0'
+__version__ = 'release-1.0.1'
 __all__ = [
     'install_packages'
 ]
