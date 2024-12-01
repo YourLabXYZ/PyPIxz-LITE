@@ -22,7 +22,10 @@ def install_packages(file_path="requirements.txt", logger=False):
 
     try:
         # Run the pip install -r requirements.txt command
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", os.path.abspath(file_path)])
+        subprocess.check_call(
+            [sys.executable, "-m", "pip", "install", "-r", os.path.abspath(file_path)],
+            check=True
+        )
 
         if not logger:
             return print("Successfully installed dependencies.")
