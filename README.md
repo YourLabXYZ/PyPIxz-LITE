@@ -1,14 +1,14 @@
 
-# PIP-Installer
+# PyPIz
 
-**PIP-Installer** is a simple, modern, and easy-to-use solution for managing your Python dependencies.
+**PyPIz** is a simple, modern, and easy-to-use solution for managing your Python dependencies.
 
-[![Contributors](https://img.shields.io/github/contributors/yourlabxyz/pip-installer.svg)](https://github.com/yourlabxyz/pip-installer/graphs/contributors)
-[![Issues](https://img.shields.io/github/issues/yourlabxyz/pip-installer.svg)](https://github.com/yourlabxyz/pip-installer/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/yourlabxyz/pip-installer)](https://github.com/yourlabxyz/pip-installer/pulls)
-[![Forks](https://img.shields.io/github/forks/yourlabxyz/pip-installer.svg)](https://github.com/yourlabxyz/pip-installer/network/members)
+[![Contributors](https://img.shields.io/github/contributors/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/graphs/contributors)
+[![Issues](https://img.shields.io/github/issues/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/pulls)
+[![Forks](https://img.shields.io/github/forks/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/network/members)
 
-PIP-Installer allows you to quickly and efficiently install the dependencies required for your Python programs to run smoothly. It is designed to integrate seamlessly with other modules, such as **logging** for log management, while ensuring compatibility with modern Python environments.
+PyPIz allows you to quickly and efficiently install the dependencies required for your Python programs to run smoothly. It is designed to integrate seamlessly with other modules, such as **logging** for log management, while ensuring compatibility with modern Python environments.
 
 ---
 
@@ -25,24 +25,24 @@ PIP-Installer allows you to quickly and efficiently install the dependencies req
 
 ## Installation
 
-Install PIP-Installer directly from PyPI:
+Install PyPIz directly from PyPI:
 
 ```bash
-$ python -m pip install pip-installer
+$ python -m pip install pypiz
 ```
 
 ---
 
 ## Usage
 
-Here’s a simple example of how to use PIP-Installer in your project:
+Here’s a simple example of how to use PyPIz in your project:
 
 ```python
-import pip_installer as ppi
+import pypiz
 
 # Install dependencies listed in a requirements.txt file
-ppi.install_packages("requirements.txt", log=False)  # The "log" argument requires the use
-                                                     # of the "logging" module.
+pypiz.install_packages("requirements.txt", log=False)  # The "log" argument requires the use
+                                                       # of the "logging" module.
 ```
 
 - **Parameters**:
@@ -61,7 +61,7 @@ ppi.install_packages("requirements.txt", log=False)  # The "log" argument requir
 
 ## Compatibility
 
-PIP-Installer officially supports **Python 3.8+** : 
+PyPIz officially supports **Python 3.8+** : 
 - **3.13.x**
 - **3.12.x**
 - **3.11.x**
@@ -74,18 +74,18 @@ PIP-Installer officially supports **Python 3.8+** :
 ## Contributing
 
 We welcome contributions from the community! If you'd like to report an issue, propose a new feature, or contribute to 
-the development, please check out our [contributing page](https://github.com/yourlabxyz/pip-installer/graphs/contributors).
+the development, please check out our [contributing page](https://github.com/yourlabxyz/pypiz/graphs/contributors).
 
-[![Contributors](https://img.shields.io/github/contributors/yourlabxyz/pip-installer.svg)](https://github.com/yourlabxyz/pip-installer/graphs/contributors)
-[![Issues](https://img.shields.io/github/issues/yourlabxyz/pip-installer.svg)](https://github.com/yourlabxyz/pip-installer/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/yourlabxyz/pip-installer)](https://github.com/yourlabxyz/pip-installer/pulls)
-[![Forks](https://img.shields.io/github/forks/yourlabxyz/pip-installer.svg)](https://github.com/yourlabxyz/pip-installer/network/members)
+[![Contributors](https://img.shields.io/github/contributors/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/graphs/contributors)
+[![Issues](https://img.shields.io/github/issues/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/pulls)
+[![Forks](https://img.shields.io/github/forks/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/network/members)
 
 ---
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/yourlabxyz/pip-installer/blob/master/LICENSE). See 
+This project is licensed under the [MIT License](https://github.com/yourlabxyz/pypiz/blob/master/LICENSE). See 
 the license file for more details.
 
 ---
