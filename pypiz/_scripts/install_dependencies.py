@@ -4,6 +4,7 @@
 import os
 import logging
 import subprocess
+import sys
 
 
 def install_packages(file_path="requirements.txt", logger=False):
@@ -14,22 +15,21 @@ def install_packages(file_path="requirements.txt", logger=False):
     :param logger: enable logging (default is False).
     """
 
-    if not os.path.exists(os.path.abspath(file_path)):
+    if not os.path.isfile(os.path.abspath(file_path)):
         if not logger:
             raise FileNotFoundError(f"The {file_path} file was not found.")
         return logging.error("The %s file was not found.", file_path)
 
-    file_path = os.path.abspath(file_path)
-
     try:
         # Run the pip install -r requirements.txt command
-        result = subprocess.run(["pip", "install", "-r", file_path], check=True)
+        subprocess.check_call(
+            [sys.executable, "-m", "pip", "install", "-r", os.path.abspath(file_path)],
+            check=True
+        )
 
         if not logger:
-            print("Successfully installed dependencies.")
-            return print(result.stdout)
-        logging.info("Successfully installed dependencies.")
-        return logging.info(result.stdout)
+            return print("Successfully installed dependencies.")
+        return logging.info("Successfully installed dependencies.")
     except subprocess.CalledProcessError as error:
         if not logger:
             raise EnvironmentError("An error occurred while installing dependencies.",

@@ -9,7 +9,7 @@ the dependencies required for the proper functioning of their program.
 
 from ._scripts.install_dependencies import install_packages
 
-__version__ = 'release-1.0.1'
+__version__ = 'release-1.0.2'
 __all__ = [
     'install_packages'
 ]
