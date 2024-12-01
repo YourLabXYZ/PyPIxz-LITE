@@ -19,11 +19,9 @@ def install_packages(file_path="requirements.txt", logger=False):
             raise FileNotFoundError(f"The {file_path} file was not found.")
         return logging.error("The %s file was not found.", file_path)
 
-    file_path = os.path.abspath(file_path)
-
     try:
         # Run the pip install -r requirements.txt command
-        result = subprocess.run(["pip", "install", "-r", file_path], check=True)
+        result = subprocess.run(["pip", "install", "-r", os.path.abspath(file_path)], check=True)
 
         if not logger:
             print("Successfully installed dependencies.")
