@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2024-12-01
+
 ### Added
 
 - Added a CHANGELOG.md file to monitor the progress of the project.
@@ -27,6 +29,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix code scanning alert - Too many arguments for logging format string #3 
 - Fix code scanning alert - Use lazy % formatting in logging functions (logging-fstring-interpolation) #8 
 - Fix code scanning alert - Trailing newlines #11 
-
-[unreleased]: https://github.com/YourLabXYZ/PyPIz/compare/release/v1.0...release/v1.0.2
+ 
+[1.0.2]: https://github.com/YourLabXYZ/PyPIz/compare/release/v1.0...release/v1.0.2
 [1.0.1]: https://github.com/YourLabXYZ/PyPIz/compare/1.0-release...master
