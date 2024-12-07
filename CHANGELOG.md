@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Added a display of log output.
+
+### Changed
+
+- Changed the name of the "logger" parameter to "enable logging" of the "install_packages" function.
+- Changed the method of calling a command via Subprocess.
+- Changing the log method.
+
 ## [1.0.2] - 2024-12-01
 
 ### Added

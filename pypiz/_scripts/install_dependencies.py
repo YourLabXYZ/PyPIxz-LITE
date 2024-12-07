@@ -7,31 +7,40 @@ import subprocess
 import sys
 
 
-def install_packages(file_path="requirements.txt", logger=False):
+def install_packages(file_path="requirements.txt", enable_logging=False):
     """
     Installs all packages listed in a requirements.txt file.
 
     :param file_path: Path to the requirements.txt file (default is "requirements.txt").
-    :param logger: enable logging (default is False).
+    :param enable_logging: enable logging (default is False).
     """
 
-    if not os.path.isfile(os.path.abspath(file_path)):
-        if not logger:
-            raise FileNotFoundError(f"The {file_path} file was not found.")
-        return logging.error("The %s file was not found.", file_path)
+    file_path = os.path.abspath(file_path)
+
+    # Check if the file exists and is valid
+    if not os.path.isfile(file_path):
+        message = f"The {file_path} file was not found."
+        logging.error(message) if enable_logging else print(message)
+        raise FileNotFoundError(message)
 
     try:
         # Run the pip install -r requirements.txt command
-        subprocess.check_call(
-            [sys.executable, "-m", "pip", "install", "-r", os.path.abspath(file_path)],
-            check=True
+        result = subprocess.run(
+            [sys.executable, "-m", "pip", "install", "-r", file_path],
+            check=True,  # Raises CalledProcessError if the command fails
+            capture_output=True,  # Captures stdout and stderr for debugging/logging
+            text=True  # Decodes stdout/stderr as text
         )
 
-        if not logger:
-            return print("Successfully installed dependencies.")
-        return logging.info("Successfully installed dependencies.")
+        success_message = "Successfully installed dependencies."
+        logging.info(success_message) if not enable_logging else print(success_message)
+
+        # Optionally log the output for debugging
+        if enable_logging:
+            logging.debug("Command output:\n%s", result.stdout)
+
     except subprocess.CalledProcessError as error:
-        if not logger:
-            raise EnvironmentError("An error occurred while installing dependencies.",
-                                   error.stderr) from error
-        return logging.error("An error occurred while installing dependencies: %s", error.stderr)
+        # Handle installation errors
+        error_message = f"An error occurred while installing dependencies: {error.stderr or 'Unknown error'}"
+        logging.error(error_message) if enable_logging else print(error_message)
+        raise EnvironmentError(error_message) from error
