@@ -73,7 +73,7 @@ def install_modules(module, version=None, latest_version=True, enable_logging=Fa
             # Run the pip install {module} or {module}>={version} command
             result = subprocess.run(
                 [sys.executable, "-m", "pip", "install",
-                 f"{f"{module}>={version}" if version is not None else f"{module}"}"],
+                 f"{module}>={version}" if version is not None else f"{module}"],
                 check=True,  # Raises CalledProcessError if the command fails
                 capture_output=True,  # Captures stdout and stderr for debugging/logging
                 text=True  # Decodes stdout/stderr as text

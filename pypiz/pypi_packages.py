@@ -44,8 +44,8 @@ def get_module_info(module_name, version=None):
 
     except requests.RequestException as error:
         return f"A network error occurred: {error}"
-    except Exception as error:
-        return f"An unexpected error occurred: {error}"
+    except ValueError as error:
+        return f"A value error occurred: {error}"
 
 # Example call (disabled to prevent immediate execution)
 # module_info = get_module_info("requests", "2.26.0")
