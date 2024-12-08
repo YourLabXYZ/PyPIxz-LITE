@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added a display of log output.
 - Added a new function allowing you to install a module with a specific version (optional).
 - Added a new function allowing you to know information about a module and a specific version of the module (optional).
+- Added the "setup.py" file.
+- Compatibility with "setuptools".
 
 ### Changed
 
@@ -19,6 +21,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Changed the method of calling a command via Subprocess.
 - Changing the log method.
 - Changed file name from "install_dependencies.py" to "install_packages.py".
+- Moving files from "pypiz/_scripts/" to "pypiz/".
+
+### Deleted
+
+- Deleting the “/_scripts/” folder.
 
 ## [1.0.2] - 2024-12-01
 
@@ -42,6 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fix code scanning alert - Too many arguments for logging format string #3 
 - Fix code scanning alert - Use lazy % formatting in logging functions (logging-fstring-interpolation) #8 
 - Fix code scanning alert - Trailing newlines #11 
- 
+
+[Unreleased]: https://github.com/YourLabXYZ/PyPIz/compare/release/v1.0.2...release/v1.1
 [1.0.2]: https://github.com/YourLabXYZ/PyPIz/compare/release/v1.0...release/v1.0.2
 [1.0.1]: https://github.com/YourLabXYZ/PyPIz/compare/1.0-release...master

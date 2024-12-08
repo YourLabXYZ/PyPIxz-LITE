@@ -6,7 +6,7 @@ import logging
 import subprocess
 import sys
 
-from pypiz._scripts.pypi_packages import get_module_info
+from pypiz.pypi_packages import get_module_info
 
 
 def install_requirements(file_path="requirements.txt", enable_logging=False):

@@ -7,8 +7,8 @@ PyPIz is a program to help developers and users to better manage
 the dependencies required for the proper functioning of their program.
 """
 
-from ._scripts.install_packages import install_requirements, install_modules
-from ._scripts.pypi_packages import get_module_info
+from pypiz.install_packages import install_requirements, install_modules
+from pypiz.pypi_packages import get_module_info
 
 __version__ = 'release-1.1'
 __all__ = [
