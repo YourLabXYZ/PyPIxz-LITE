@@ -41,8 +41,8 @@ Here’s a simple example of how to use PyPIz in your project:
 import pypiz
 
 # Install dependencies listed in a requirements.txt file
-pypiz.install_packages("requirements.txt", log=False)  # The "log" argument requires the use
-                                                       # of the "logging" module.
+pypiz.install_requirements("requirements.txt", enable_logging=True)  # The "log" argument requires the use
+                                                                     # of the "logging" module.
 ```
 
 - **Parameters**:
