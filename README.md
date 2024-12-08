@@ -1,14 +1,14 @@
 
-# PyPIz
+# PyPIxz
 
-**PyPIz** is a simple, modern, and easy-to-use solution for managing your Python dependencies.
+**PyPIxz** is a simple, modern, and easy-to-use solution for managing your Python dependencies.
 
-[![Contributors](https://img.shields.io/github/contributors/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/graphs/contributors)
-[![Issues](https://img.shields.io/github/issues/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/pulls)
-[![Forks](https://img.shields.io/github/forks/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/network/members)
+[![Contributors](https://img.shields.io/github/contributors/yourlabxyz/PyPIxz.svg)](https://github.com/yourlabxyz/PyPIxz/graphs/contributors)
+[![Issues](https://img.shields.io/github/issues/yourlabxyz/PyPIxz.svg)](https://github.com/yourlabxyz/PyPIxz/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/yourlabxyz/PyPIxz.svg)](https://github.com/yourlabxyz/PyPIxz/pulls)
+[![Forks](https://img.shields.io/github/forks/yourlabxyz/PyPIxz.svg)](https://github.com/yourlabxyz/PyPIxz/network/members)
 
-PyPIz allows you to quickly and efficiently install the dependencies required for your Python programs to run smoothly. It is designed to integrate seamlessly with other modules, such as **logging** for log management, while ensuring compatibility with modern Python environments.
+PyPIxz allows you to quickly and efficiently install the dependencies required for your Python programs to run smoothly. It is designed to integrate seamlessly with other modules, such as **logging** for log management, while ensuring compatibility with modern Python environments.
 
 ---
 
@@ -25,24 +25,23 @@ PyPIz allows you to quickly and efficiently install the dependencies required fo
 
 ## Installation
 
-Install PyPIz directly from PyPI:
+Install PyPIxz directly from PyPI:
 
 ```bash
-$ python -m pip install pypiz
+$ python -m pip install pypixz
 ```
 
 ---
 
 ## Usage
 
-Here’s a simple example of how to use PyPIz in your project:
+Here’s a simple example of how to use PyPIxz in your project:
 
 ```python
-import pypiz
+import pypixz
 
 # Install dependencies listed in a requirements.txt file
-pypiz.install_requirements("requirements.txt", enable_logging=True)  # The "log" argument requires the use
-                                                                     # of the "logging" module.
+pypixz.install_requirements("requirements.txt", enable_logging=False)
 ```
 
 - **Parameters**:
@@ -61,7 +60,7 @@ pypiz.install_requirements("requirements.txt", enable_logging=True)  # The "log"
 
 ## Compatibility
 
-PyPIz officially supports **Python 3.8+** : 
+PyPIxz officially supports **Python 3.8+** : 
 - **3.13.x**
 - **3.12.x**
 - **3.11.x**
@@ -74,18 +73,18 @@ PyPIz officially supports **Python 3.8+** :
 ## Contributing
 
 We welcome contributions from the community! If you'd like to report an issue, propose a new feature, or contribute to 
-the development, please check out our [contributing page](https://github.com/yourlabxyz/pypiz/graphs/contributors).
+the development, please check out our [contributing page](https://github.com/yourlabxyz/PyPIxz/graphs/contributors).
 
-[![Contributors](https://img.shields.io/github/contributors/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/graphs/contributors)
-[![Issues](https://img.shields.io/github/issues/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/pulls)
-[![Forks](https://img.shields.io/github/forks/yourlabxyz/pypiz.svg)](https://github.com/yourlabxyz/pypiz/network/members)
+[![Contributors](https://img.shields.io/github/contributors/yourlabxyz/PyPIxz.svg)](https://github.com/yourlabxyz/PyPIxz/graphs/contributors)
+[![Issues](https://img.shields.io/github/issues/yourlabxyz/PyPIxz.svg)](https://github.com/yourlabxyz/PyPIxz/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/yourlabxyz/PyPIxz.svg)](https://github.com/yourlabxyz/PyPIxz/pulls)
+[![Forks](https://img.shields.io/github/forks/yourlabxyz/PyPIxz.svg)](https://github.com/yourlabxyz/PyPIxz/network/members)
 
 ---
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/yourlabxyz/pypiz/blob/master/LICENSE). See 
+This project is licensed under the [MIT License](https://github.com/yourlabxyz/PyPIxz/blob/master/LICENSE). See 
 the license file for more details.
 
 ---

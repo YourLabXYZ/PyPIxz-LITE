@@ -1,14 +1,14 @@
 # (c) 2024 YourLabXYZ.
 # Licensed under MIT License.
 
-""" PyPIz
+""" PyPIxz
 
-PyPIz is a program to help developers and users to better manage
+PyPIxz is a program to help developers and users to better manage
 the dependencies required for the proper functioning of their program.
 """
 
-from pypiz.install_packages import install_requirements, install_modules
-from pypiz.pypi_packages import get_module_info
+from pypixz.install_packages import install_requirements, install_modules
+from pypixz.pypi_packages import get_module_info
 
 __version__ = 'release-1.1'
 __all__ = [

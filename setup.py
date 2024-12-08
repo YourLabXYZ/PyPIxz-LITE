@@ -8,12 +8,12 @@ It uses setuptools to define the package metadata and dependencies.
 from setuptools import setup, find_packages
 
 VERSION = '1.1.0'
-DESCRIPTION = ('PyPIz is a simple, modern, and easy-to-use solution for managing your Python '
+DESCRIPTION = ('PyPIxz is a simple, modern, and easy-to-use solution for managing your Python '
                'dependencies.')
 
 # Setting up
 setup(
-    name="pypiz",
+    name="pypixz",
     version=VERSION,
     author="YourLabXYZ",
     description=DESCRIPTION,
