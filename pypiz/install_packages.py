@@ -58,7 +58,8 @@ def install_modules(module, version=None, latest_version=True, enable_logging=Fa
 
     :param module: The name of the module to install.
     :param version: The version of the module to install.
-    :param latest_version: Installs the latest version of the module if no version specified (default is True).
+    :param latest_version: Installs the latest version of the module if no version specified
+                           (default is True).
     :param enable_logging: Enable logging (default is False).
     """
 

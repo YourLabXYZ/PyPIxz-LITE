@@ -1,3 +1,10 @@
+"""
+setup.py
+
+This module sets up the Python package configuration for the project.
+It uses setuptools to define the package metadata and dependencies.
+"""
+
 from setuptools import setup, find_packages
 
 VERSION = '1.1.0'
