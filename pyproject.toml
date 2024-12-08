@@ -23,6 +23,6 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/YourLabXYZ/PyPIxz/wiki
+Homepage = "https://github.com/YourLabXYZ/PyPIxz/wiki"
 Issues = "https://github.com/yourlabxyz/pypixz/issues"
 Source = "https://github.com/yourlabxyz/pypixz/"
