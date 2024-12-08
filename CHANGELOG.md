@@ -10,12 +10,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Added a display of log output.
+- Added a new function allowing you to install a module with a specific version (optional).
+- Added a new function allowing you to know information about a module and a specific version of the module (optional).
 
 ### Changed
 
 - Changed the name of the "logger" parameter to "enable logging" of the "install_packages" function.
 - Changed the method of calling a command via Subprocess.
 - Changing the log method.
+- Changed file name from "install_dependencies.py" to "install_packages.py".
 
 ## [1.0.2] - 2024-12-01
 
