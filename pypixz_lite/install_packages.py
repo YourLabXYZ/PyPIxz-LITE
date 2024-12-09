@@ -50,7 +50,7 @@ def install_requirements(file_path="requirements.txt", enable_logging=False):
 # install_requirements("requirements.txt")
 
 
-def install_modules(module,  enable_logging=False):
+def install_modules(module, enable_logging=False):
     """
     Installs a specific version of a Python module using subprocess.
 
@@ -60,7 +60,7 @@ def install_modules(module,  enable_logging=False):
 
 
     try:
-        # Run the pip install {module} or {module}>={version} command
+        # Run the pip install {module} command
         result = subprocess.run(
             [sys.executable, "-m", "pip", "install", module],
             check=True,  # Raises CalledProcessError if the command fails
